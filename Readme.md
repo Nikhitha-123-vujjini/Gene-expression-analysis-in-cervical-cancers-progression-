@@ -4,12 +4,12 @@ A Python-based bioinformatics pipeline for identifying differentially expressed 
 Independent course research — May 2026
 
 
-##Overview
+## Overview
 This project analyses gene expression patterns across five cervical disease stages — Normal, CIN1, CIN2, CIN3, and Cancer — using Affymetrix Human Genome U133 Plus 2.0 Array data from 128 patient tissue samples. The pipeline covers data ingestion, cleaning, statistical testing, post-hoc analysis, gene annotation, and visualisation.
 
 Key findings: 19 of the 20 most variable probes were significantly differentially expressed, with the Cancer stage showing consistently distinct expression compared to all pre-cancerous groups. Top genes include 
 
-##Dataset
+## Dataset
 Property      Details
 Source        NCBIGEO
 Accession     GSE63514
@@ -24,7 +24,7 @@ CIN3          40
 Cancer        28
 
 
-##Data Setup
+## Data Setup
 This pipeline requires two data files that must be downloaded separately and placed in the data/ folder.
 1. GSE63514 Series Matrix
 
@@ -98,4 +98,5 @@ pre-cancerous stages (Normal, CIN1, CIN2, CIN3).
 
 ## Author
 Nikhitha Vujjini
+
 M.S.Bioinformatics 
