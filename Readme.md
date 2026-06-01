@@ -2,7 +2,7 @@
 A Python-based bioinformatics pipeline for identifying differentially expressed genes across cervical cancer progression stages using the GSE63514 microarray dataset.
 
 
-### Overview
+## Overview
 Cervical cancer develops through a series of precancerous stages known as Cervical Intraepithelial Neoplasia (CIN1–CIN3) before progressing to invasive carcinoma. Understanding gene expression changes during disease progression can help identify biomarkers and biological pathways associated with cancer development.
 
 This project analyzes gene expression data from the GEO dataset **GSE63514** to identify genes that are significantly differentially expressed across five disease stages:
@@ -16,7 +16,7 @@ This project analyzes gene expression data from the GEO dataset **GSE63514** to 
 The workflow includes data preprocessing, statistical testing, post-hoc analysis, gene annotation, and visualization.
 
 
-### Dataset Information
+## Dataset Information
 
 | Category | Information |
 |-----------|------------|
@@ -27,7 +27,7 @@ The workflow includes data preprocessing, statistical testing, post-hoc analysis
 | Disease | Cervical Intraepithelial Neoplasia / Cervical Cancer |
 | Total Samples | 128 |
 
-### Sample Distribution
+## Sample Distribution
 
 | Group | Samples |
 |---------|---------|
@@ -40,7 +40,7 @@ The workflow includes data preprocessing, statistical testing, post-hoc analysis
 
 
 
-### Data Setup
+## Data Setup
 This pipeline requires two data files that must be downloaded separately and placed in the data/ folder.
 **1. GSE63514 Series Matrix**
 
@@ -54,7 +54,7 @@ This pipeline requires two data files that must be downloaded separately and pla
 - Download the annotation file (tab-delimited)
 - Save as data/clear_annotation.csv
 
-### Libraries used
+## Libraries used
 - pandas
 - matplotlib
 - seaborn
@@ -62,7 +62,7 @@ This pipeline requires two data files that must be downloaded separately and pla
 - scikit-posthocs
 - openpyxl (for reading the excel files)
 
-### Usage
+## Usage
 Run each script in order from the biostats/ directory. Each step depends on outputs from the previous step.
 ```
 python3 scripts/01_daignosis.py
@@ -76,7 +76,7 @@ python3 scripts/08_ranking_results.py
 python3 scripts/09_final_mapping.py
 python3 scripts/10_visualise.py
 ```
-### Pipeline Steps
+## Pipeline Steps
 
 | Step | Script | Description |
 |------|--------|-------------|
@@ -91,7 +91,7 @@ python3 scripts/10_visualise.py
 | 9 | `09_final_mapping.py` | Maps probe IDs to gene symbols and descriptions via GPL570 annotation |
 | 10 | `10_visualise.py` | Generates individual and combined boxplots for significant probes |
 
-### Results
+## Results
 
 The analysis identified the following top differentially expressed genes:
 
@@ -109,7 +109,6 @@ The analysis identified the following top differentially expressed genes:
 
 Expression differences were most pronounced between the Cancer group and all pre-cancerous stages (Normal, CIN1, CIN2, CIN3).
 
-** top 10 significant probes **
 ![Top 10 Probes](figures/top10_probes_boxplot.png)
 
 ### Interpretation
