@@ -42,6 +42,7 @@ The workflow includes data preprocessing, statistical testing, post-hoc analysis
 
 ## Data Setup
 This pipeline requires two data files that must be downloaded separately and placed in the data/ folder.
+
 **1. GSE63514 Series Matrix**
 
 - Go to GSE63514 on NCBI GEO
