@@ -4,7 +4,11 @@ import pandas as pd
 from scipy import stats
 
 def main():
-    analysed_data = pd.read_csv("results/analysed_df.csv")
+    try:
+        analysed_data = pd.read_csv("results/analysed_df.csv")
+    except FileNotFoundError:
+        print("Error: analysed_df.csv not found. Make sure you ran feature_selection.py first.")
+        return
     print(analysed_data.shape)
 
     probes = []

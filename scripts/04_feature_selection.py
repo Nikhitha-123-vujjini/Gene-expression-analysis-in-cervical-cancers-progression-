@@ -32,12 +32,12 @@ def main():
     median_df.to_csv("results/median_df.csv")
     
     #sanity check - visualize one probe across disease progression stages
-    sns.boxplot(data=analyse_df, x="group", y="220090_at", order=["Normal", "CIN1", "CIN2", "CIN3", "Cancer"])
-    plt.title("Probe 220090_at Expression by Disease Stage")
+    first_probe = top_probes[0]
+    sns.boxplot(data=analyse_df, x="group", y=first_probe, order=["Normal", "CIN1", "CIN2", "CIN3", "Cancer"])
+    plt.title("Probe " + first_probe + " Expression by Disease Stage")
     plt.savefig("figures/sanity_check.png")
 
     print("Done! Results saved to results/ and figures/")
-
 
 
 if __name__ == "__main__":

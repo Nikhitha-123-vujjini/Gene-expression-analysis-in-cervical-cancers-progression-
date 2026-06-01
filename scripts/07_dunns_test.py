@@ -4,8 +4,10 @@ import pandas as pd
 import scikit_posthocs as sp
 
 def main():
-    analysed_data = pd.read_csv("results/analysed_df.csv")
-
+    try:
+        analysed_data = pd.read_csv("results/analysed_df.csv")
+    except FileNotFoundError:
+        print("Error: analysed_df.csv not found. Make sure you ran feature_selection.py first.")
     probes = []
     for col in analysed_data:
         if col != "sample_id" and col != "group":

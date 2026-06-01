@@ -17,7 +17,7 @@ def main():
     metadata.to_csv("results/metadata.csv", index=False)
 
     #Extract probe-level expression matrix, drop GEO end marker, and index by probe ID
-    expression = df.iloc[70: , : ]
+    expression = df.iloc[70:,:]
     expression = expression[expression.iloc[:, 0] != "!series_matrix_table_end"]
     expression = expression.set_index(0)
 
