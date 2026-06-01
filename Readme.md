@@ -10,29 +10,28 @@ This project analyses gene expression patterns across five cervical disease stag
 Key findings: 19 of the 20 most variable probes were significantly differentially expressed, with the Cancer stage showing consistently distinct expression compared to all pre-cancerous groups. Top genes include 
 
 ## Dataset
-Property      Details
-Source        NCBIGEO
-Accession     GSE63514
-Disease       Cervical Intraepithelial Neoplasia
-Organism      Homo sapiens
-Platform      Affymetrix Human Genome U133 Plus 2.0 Array (GPL570)
-TotalSamples  128
-Normal        24
-CIN1          14
-CIN2          22
-CIN3          40
-Cancer        28
+- Source = NCBIGEO
+- Accession = GSE63514
+- Disease = Cervical Intraepithelial Neoplasia
+- Organism = Homo sapiens
+- Platform = Affymetrix Human Genome U133 Plus 2.0 Array (GPL570)
+- TotalSamples = 128
+- Normal = 24
+- CIN1 = 14
+- CIN2 = 22
+- CIN3 = 40
+- Cancer = 28
 
 
 ## Data Setup
 This pipeline requires two data files that must be downloaded separately and placed in the data/ folder.
-1. GSE63514 Series Matrix
+**1. GSE63514 Series Matrix**
 
 Go to GSE63514 on NCBI GEO
 Download the series matrix file and convert to .xlsx
 Save as data/GSE63514_series_matrix.xlsx
 
-2. GPL570 Platform Annotation
+**2. GPL570 Platform Annotation**
 
 Go to GPL570 on NCBI GEO
 Download the annotation file (tab-delimited)
@@ -46,7 +45,7 @@ Save as data/clear_annotation.csv
 - scikit-posthocs
 - openpyxl (for reading the excel files)
 
-##Usage
+## Usage
 Run each script in order from the biostats/ directory. Each step depends on outputs from the previous step.
 
 python3 scripts/01_daignosis.py
