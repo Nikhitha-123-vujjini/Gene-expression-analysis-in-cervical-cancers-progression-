@@ -1,0 +1,11 @@
+probe,p_value,rank,Gene Symbol,Gene Title
+207802_at,5.557237256683889e-13,1,CRISP3,cysteine-rich secretory protein 3
+220090_at,6.828572070993348e-09,2,CRNN,cornulin
+1560712_at,1.3134919752376316e-07,3,TMPRSS11B,"transmembrane protease, serine 11B"
+223720_at,4.2787876761510825e-07,4,SPINK7,"serine peptidase inhibitor, Kazal type 7 (putative)"
+213240_s_at,7.019050350494862e-07,5,KRT4,keratin 4
+226147_s_at,8.02211458326794e-06,6,PIGR,polymeric immunoglobulin receptor
+229659_s_at,8.968583529367709e-06,7,,
+224328_s_at,3.500237543035441e-05,8,LCE3D,late cornified envelope 3D
+220267_at,3.878660071187438e-05,9,KRT24,keratin 24
+213432_at,7.556383527642166e-05,10,MUC5B,"mucin 5B, oligomeric mucus/gel-forming"
